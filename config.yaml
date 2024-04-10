@@ -1,10 +1,10 @@
 TYPE: when
 
 # whether use comment
-USE_COMMENT: False
+USE_COMMENT: True
 
 # whether use file context
-USE_FILE_CONTEXT: False
+USE_FILE_CONTEXT: True
 
 # if use file context, how many lines before
 LINE_BEFORE: 10
@@ -15,4 +15,4 @@ USE_IMPORT_MESSAGE: False
 # whether fill in the middle (use right context)
 FILL_IN_THE_MIDDLE: False
 
-SAVE_FILE_NAME: generated/when_to_use_function
+SAVE_FILE_NAME: generated/when_to_use_file10_comment

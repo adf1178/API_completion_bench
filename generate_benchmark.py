@@ -159,7 +159,7 @@ def generate_how_to_use(config):
                 input_data = comment + '\n' + input_data
                 
             if config.USE_FILE_CONTEXT:
-                input_data = file_left_context.split('\n')[-config.LINE_BEFORE:] + '\n' + input_data
+                input_data = '\n'.join(file_left_context.split('\n')[-config.LINE_BEFORE:]) + '\n' + input_data
                 
             if config.USE_IMPORT_MESSAGE:
                 input_data = '\n'.join(import_list) + "\n" + input_data
@@ -196,7 +196,7 @@ def generate_when_to_use(config):
                 input_data = comment + '\n' + input_data
                 
             if config.USE_FILE_CONTEXT:
-                input_data = file_left_context.split('\n')[-config.LINE_BEFORE:] + '\n' + input_data
+                input_data = '\n'.join(file_left_context.split('\n')[-config.LINE_BEFORE:]) + '\n' + input_data
                 
             if config.USE_IMPORT_MESSAGE:
                 input_data = '\n'.join(import_list) + "\n" + input_data
